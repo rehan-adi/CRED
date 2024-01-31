@@ -16,18 +16,22 @@ function Navbar() {
                 initial={{y: "50vh", opacity: 0, scale: 0.5, color: '#00FF00'}}
                 animate={{y: 0, opacity: 1, scale: 1, color: '#FFFFFF'}}
                 transition={{duration: 3, type: 'spring', stiffness: 150}}
-                className='font-bold text-center mt-[-25px] text-[98px]'>rewards for paying <br />
+                className='font-bold text-start lg:text-center lg:mt-[-80px] lg:w-[80vw] w-[80vw] text-5xl lg:text-8xl'>rewards for paying <br />
                     credit card bills.</motion.h1>
-                    <motion.p
+                     <div className='w-[80vw] lg:mt-0 lg:w-[50vw] lg:text-center mt-6'>
+                     <motion.p
                     initial={{y: "60vh", scale: 0.5, opacity: 0}}
                     animate={{y: 0, scale: 1, opacity: 1}}
                     transition={{duration: 3, type: 'spring', stiffness: 111}} 
-                    className='font-bold  text-[25px]'>join 9M+ members who win rewards and cashbacks everyday</motion.p>
+                    className='font-bold text-xs lg:mt-9 lg:text-xl'>join 9M+ members who win rewards and cashbacks everyday</motion.p>
+                     </div>
+                    <div className='lg:pr-0 pr-[110px]'>
                     <motion.button
                     initial={{y: "70vh", opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{duration: 1}}
-                     className='px-14 hover:bg-transparent border-2 hover:text-white py-4 mt-14 bg-white text-black font-bold text-2xl rounded-full'>Download CRED</motion.button>
+                     className='lg:px-10 px-5  hover:bg-transparent border-2 hover:text-white py-2 lg:py-3 mt-8 lg:mt-14 bg-white text-black font-semibold text-lg lg:text-xl rounded-full'>Download CRED</motion.button>
+                    </div>
             </div>
         </div>
     )
