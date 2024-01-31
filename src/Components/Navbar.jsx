@@ -1,24 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { motion } from 'framer-motion'
 import { CgMenuRightAlt } from "react-icons/cg";
+import { RiCloseLine } from "react-icons/ri";
 
 function Navbar() {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <div>
-            <nav className='bg-black lg:h-[25vh] h-[18vh] text-white flex justify-between px-8 lg:px-52 items-center'>
-  <img src="https://web-images.credcdn.in/_next/assets/images/home-page/cred-logo.png" width={40} height={45} alt="" />
+              <nav className='bg-black lg:h-[25vh] h-[18vh] text-white flex justify-between px-8 lg:px-52 items-center relative'>
+      <img src="https://web-images.credcdn.in/_next/assets/images/home-page/cred-logo.png" width={40} height={45} alt="" />
 
-  {/* Menu for Small Screens */}
-  <div className='lg:hidden flex items-center'>
-    <button className='text-white text-4xl focus:outline-none'><CgMenuRightAlt /></button>
-  </div>
+      {/* Menu Button for Small Screens */}
+      <div className='lg:hidden flex items-center'>
+        <button className='text-white text-4xl focus:outline-none' onClick={toggleMenu}>
+          {isMenuOpen ? <RiCloseLine /> : <CgMenuRightAlt />}
+        </button>
+      </div>
 
-  {/* Menu for Large Screens */}
-  <div className='hidden lg:flex text-lg opacity-90 font-semibold gap-10'>
-    <a href="" className='text-sm'>credit score check</a>
-    <a href="" className='text-sm'>CRED pay</a>
-  </div>
-</nav>
+      {/* Sidebar for Large Screens */}
+      <div className={`lg:flex text-lg opacity-90 font-semibold gap-10 hidden `}>
+        <a href="" className='text-sm'>credit score check</a>
+        <a href="" className='text-sm'>CRED pay</a>
+      </div>
+
+      {/* Sidebar for Small Screens */}
+      <div className={`lg:hidden fixed top-0 right-0 bg-green-500 w-80 h-full transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <button className='text-white text-4xl focus:outline-none ml-4 mt-4' onClick={toggleMenu}><RiCloseLine /></button>
+        <div className='flex flex-col items-center mt-16'>
+          <a href="" className='text-white text-sm'>credit score check</a>
+          <a href="" className='text-white text-sm'>CRED pay</a>
+        </div>
+      </div>
+    </nav>
 
             <div className='bg-black flex justify-center items-center flex-col text-[#F8F8F8] h-[75vh] w-full'>
                 <motion.h1 
