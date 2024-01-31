@@ -28,24 +28,24 @@ function PhoneSection() {
   
 
   return (
-        <div ref={ref} className='flex bg-black h-[100vh] relative w-full overflow-hidden items-end justify-center'>
-            <motion.img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-left-2.png"  width={265}  className='absolute z-10 bottom-[-75px] left-[295px]'  
+        <div ref={ref} className='flex bg-black lg:h-[100vh] h-[70vh] relative w-full overflow-hidden items-end justify-center'>
+            <motion.img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-left-2.png" className='absolute lg:w-[265px] w-[95px] z-10 lg:bottom-[-75px] left-[265px] lg:left-[295px]'  
                initial={{ y: "30vh", opacity: 0 }}
                animate={controls1}
              />
-            <motion.img src="	https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-left-1.png" width={280} className='z-20 absolute bottom-[-48px] left-[450px]'
+            <motion.img src="	https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-left-1.png" className='z-20 lg:w-[280px] w-[118px] absolute lg:bottom-[-48px] left-[200px]  bottom-[-20px] lg:left-[450px]'
               initial={{y: "35vh", opacity: 0}} 
               animate={controls2} 
               />
-            <motion.img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-center.png"  width={300} className=' absolute z-40 bottom-[-30px] ' 
+            <motion.img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-center.png"  className=' absolute lg:w-[300px] w-[125px] z-40 bottom-[-10px] lg:bottom-[-30px] ' 
               initial={{y: "50vh", opacity: 0}}
               animate={controls3}
             />
-            <motion.img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-right-1.png"  width={280}  className='z-20 absolute bottom-[-48px] right-[450px]' 
+            <motion.img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-right-1.png"   className='z-20 lg:w-[280px] w-[118px] absolute lg:bottom-[-48px] bottom-[-20px] right-[200px] lg:right-[450px]' 
              initial={{y: '35vh', opacity: 0}}
              animate={controls4}
              />
-            <motion.img src="	https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-right-2.png"  width={265} className='absolute z-10 bottom-[-75px] right-[295px]'
+            <motion.img src="	https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-right-2.png" className='absolute lg:w-[265px] w-[95px] z-10 lg:bottom-[-75px] right-[265px] lg:right-[295px]'
               initial={{y: '30vh', opacity: 0}}
               animate={controls5}
              />
