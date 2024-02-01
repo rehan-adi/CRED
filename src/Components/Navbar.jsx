@@ -29,11 +29,15 @@ function Navbar() {
       </div>
 
       {/* Sidebar for Small Screens */}
-      <div className={`lg:hidden fixed top-0 right-0 bg-green-500 w-80 z-50 h-full transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <button className='text-white text-4xl focus:outline-none ml-4 mt-4' onClick={toggleMenu}><RiCloseLine /></button>
-        <div className='flex flex-col items-center mt-16'>
-          <a href="" className='text-white text-sm'>credit score check</a>
-          <a href="" className='text-white text-sm'>CRED pay</a>
+      <div className={`lg:hidden fixed top-0 right-0 bg-[#0F0F0F] w-[375px] z-50 h-full transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <button className='text-white text-4xl focus:outline-none ml-[300px] mt-10' onClick={toggleMenu}><RiCloseLine /></button>
+        <div className='flex flex-col items-center gap-8 mt-16'>
+          <div className='px-20 py-4 rounded-xl bg-[#272B2D6E]'>
+            <a href="" className='text-white text-sm font-semibold'>CRED pay</a>
+          </div>
+          <div className='px-12 py-4 rounded-xl bg-[#272B2D6E]'>
+          <a href="" className='text-white font-semibold text-sm'>credit score check</a>
+          </div>
         </div>
       </div>
     </nav>

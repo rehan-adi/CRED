@@ -28,7 +28,7 @@ function PhoneSection() {
   
 
   return (
-        <div ref={ref} className='flex bg-black lg:h-[100vh] h-[70vh] relative w-full overflow-hidden items-end justify-center'>
+        <div ref={ref} className='flex bg-black lg:h-[100vh] h-[65vh] relative w-full overflow-hidden items-end justify-center'>
             <motion.img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-left-2.png" className='absolute lg:w-[265px] w-[95px] z-10 lg:bottom-[-75px] left-[265px] lg:left-[295px]'  
                initial={{ y: "30vh", opacity: 0 }}
                animate={controls1}
