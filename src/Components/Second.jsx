@@ -18,12 +18,15 @@ function Second() {
         <button className='lg:px-10 px-7 hover:bg-transparent border-2 hover:text-white py-2 mt-8 bg-white text-black font-semibold text-base lg:text-lg rounded-full'>Explor Reward</button>
         </div>
     </div>
-    <div className='bg-white flex flex-col justify-center items-center w-full h-[35vh]'>
-           <div>
-                <h1 className='text-[#212426] font-semibold text-xl pr-[890px] '>rewards from brands you love.</h1>
+    <div className='flex flex-col justify-center text-black items-center w-full h-[60vh] lg:h-[35vh]'>
+           <div className='mb-14'>
+                <h1 className='text-[#212426] font-semibold text-base lg:text-xl lg:pr-[890px] '>rewards from brands you love.</h1>
            </div>
-           <div className='mt-14'>
+           <div className='mt-14 hidden lg:flex'>
                <img src="https://web-images.credcdn.in/_next/assets/images/home-page/brands-desktop.png" width={1200} alt="" />
+           </div>
+           <div className='w-auto h-[30vh] lg:hidden'>
+               <img src="https://web-images.credcdn.in/_next/assets/images/home-page/brands-mobile.png" width={"310px"} alt="" />
            </div>
     </div>
     </>

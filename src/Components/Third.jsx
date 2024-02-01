@@ -2,7 +2,7 @@ import React from 'react'
 
 function Third() {
     return (
-        <div className=' h-[100vh] pl-40 flex flex-col items-start justify-center w-full bg-cover bg-no-repeat bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg)]'>
+        <div className=' lg:h-[100vh] h-[150vh] pl-40 flex flex-col items-start justify-center w-full bg-cover bg-no-repeat bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg)]'>
             <h1 className='text-white font-bold text-[60px]'>we take your money <br />
                 matters seriously.</h1>
                 <p className='text-xl font-bold text-white'>so that you don’t have to.</p>
