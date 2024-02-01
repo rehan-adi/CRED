@@ -29,7 +29,7 @@ function Navbar() {
       </div>
 
       {/* Sidebar for Small Screens */}
-      <div className={`lg:hidden fixed top-0 right-0 bg-green-500 w-80 h-full transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`lg:hidden fixed top-0 right-0 bg-green-500 w-80 z-50 h-full transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <button className='text-white text-4xl focus:outline-none ml-4 mt-4' onClick={toggleMenu}><RiCloseLine /></button>
         <div className='flex flex-col items-center mt-16'>
           <a href="" className='text-white text-sm'>credit score check</a>
@@ -38,7 +38,7 @@ function Navbar() {
       </div>
     </nav>
 
-            <div className='bg-black flex justify-center items-center flex-col text-[#F8F8F8] h-[75vh] w-full'>
+            <div className='bg-black flex justify-center items-center  z-10 flex-col text-[#F8F8F8] h-[75vh] w-full'>
                 <motion.h1 
                 initial={{y: "50vh", opacity: 0, scale: 0.5, color: '#00FF00'}}
                 animate={{y: 0, opacity: 1, scale: 1, color: '#FFFFFF'}}
