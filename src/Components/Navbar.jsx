@@ -12,11 +12,10 @@ function Navbar() {
     };
 
     return (
-        <div>
-              <nav className='bg-black lg:h-[25vh] h-[18vh] text-white flex justify-between px-8 lg:px-52 items-center relative'>
+        <>
+              <nav className='bg-black lg:h-[25vh] h-[18vh] text-white flex justify-between px-8 lg:px-52 items-center w-auto overflow-hidden relative'>
       <img src="https://web-images.credcdn.in/_next/assets/images/home-page/cred-logo.png" width={40} height={45} alt="" />
 
-      {/* Menu Button for Small Screens */}
       <div className='lg:hidden flex items-center'>
         <button className='text-white text-4xl focus:outline-none' onClick={toggleMenu}>
           {isMenuOpen ? <RiCloseLine /> : <CgMenuRightAlt />}
@@ -61,7 +60,7 @@ function Navbar() {
                      className='lg:px-10 px-5  hover:bg-transparent border-2 hover:text-white py-2 lg:py-3 mt-8 lg:mt-14 bg-white text-black font-semibold text-lg lg:text-xl rounded-full'>Download CRED</motion.button>
                     </div>
             </div>
-        </div>
+        </>
     )
 }
 
