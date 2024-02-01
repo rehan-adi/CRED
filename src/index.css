@@ -16,3 +16,9 @@
     background-position: center;
     background-attachment: fixed;
 }
+.bg-img3{
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
