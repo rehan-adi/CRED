@@ -17,7 +17,7 @@ function App() {
       <Third />
       <Fourth />
       <Fifth />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
