@@ -42,12 +42,12 @@ function Navbar() {
       </div>
     </nav>
 
-            <div className='bg-black flex justify-center items-center z-10 flex-col text-[#F8F8F8] h-[75vh] w-full'>
+            <div className='bg-black flex justify-center lg:h-[75vh] md:h-screen items-center z-10 flex-col text-[#F8F8F8] h-[75vh] w-full'>
                 <motion.h1 
                 initial={{y: "50vh", opacity: 0, scale: 0.5, color: '#00FF00'}}
                 animate={{y: 0, opacity: 1, scale: 1, color: '#FFFFFF'}}
                 transition={{duration: 3, type: 'spring', stiffness: 150}}
-                className='font-bold text-start lg:text-center lg:mt-[-80px] lg:w-[80vw] w-[80vw] text-5xl md:text-7xl lg:text-8xl'>rewards for paying <br />
+                className='font-bold text-start lg:text-center lg:mt-[-80px] md:mt-[-220px] lg:w-[80vw] w-[80vw] text-5xl md:text-7xl lg:text-8xl'>rewards for paying <br />
                     credit card bills.</motion.h1>
                      <div className='w-[80vw] lg:mt-0 lg:w-[50vw] lg:text-center mt-6'>
                      <motion.p
