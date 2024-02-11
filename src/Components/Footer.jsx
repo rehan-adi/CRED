@@ -2,13 +2,13 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className='bg-[#111] flex justify-evenly lg:flex-row flex-col pl-8 lg:pl-0 h-[200vh] lg:h-screen w-full text-[#FFFFFF]'>
+        <div className='bg-[#111] md:h-[145vh] flex justify-evenly lg:flex-row flex-col pl-8 lg:pl-0 h-[200vh] lg:h-screen w-full text-[#FFFFFF]'>
             <div className='lg:pt-20 pt-5 pl-15'>
-                <img className='lg:mb-20 mb-10 lg:w-[130px]' src="https://web-images.credcdn.in/_next/assets/images/home-page/cred-logo-horizontal.png" width={90} alt="" />
-                <img src="	https://web-images.credcdn.in/_next/assets/images/home-page/security-logos.png" className='lg:w-[330px]' width={222} alt="" />
-                <p className='text-lg font-semibold mt-5 '>complete security. no asterisks.</p>
+                <img className='lg:mb-20 mb-10 md:w-[150px] lg:w-[130px]' src="https://web-images.credcdn.in/_next/assets/images/home-page/cred-logo-horizontal.png" width={90} alt="" />
+                <img src="	https://web-images.credcdn.in/_next/assets/images/home-page/security-logos.png" className='lg:w-[330px] md:w-[240px]' width={222} alt="" />
+                <p className='text-lg left-fulltext-lg md:text-2xl font-semibold mt-5 '>complete security. no asterisks.</p>
                 <div className='w-[70vw] lg:w-[25vw]'>
-                <p className='mt-6 lg:text-sm text-xs opacity-70'>CRED encrypts all data and transactions to ensure a completely secure experience for our members.</p>
+                <p className='mt-6 lg:text-sm md:text-lg text-xs opacity-70'>CRED encrypts all data and transactions to ensure a completely secure experience for our members.</p>
                 </div>
             </div>
             <div className=' pt-5 lg:pt-20 '>
